@@ -149,5 +149,7 @@ include vendor/themes/common.mk
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/nusantara/overlay
 DEVICE_PACKAGE_OVERLAYS += vendor/nusantara/overlay/common
 
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += vendor/lineage/config/device_framework_matrix.xml
+
 # QTI Components
 $(call inherit-product-if-exists, device/qcom/common/common.mk)
